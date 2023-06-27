@@ -1,0 +1,50 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate project for quickly building REST APIs using Node.js, Express.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "nodemon -r dotenv/config app.js",
+    "lint": "./node_modules/.bin/eslint",
+    "lint:fix": "./node_modules/.bin/eslint --fix",
+    "prettier": "./node_modules/.bin/prettier --check .",
+    "prettier:fix": "./node_modules/.bin/prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grzegorz Kielar <grzegorz.kielar@kielniakodu.io>",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.9.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.8"
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "generator",
+    "express",
+    "rest",
+    "api",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "ajv",
+    "eslint",
+    "prettier"
+  ]
+}
