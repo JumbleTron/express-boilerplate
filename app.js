@@ -20,9 +20,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use((_, res) => {
-  res.writeHead(404, { 'Content-Type': 'application/json' });
-  res.end(JSON.stringify({ error: 'Not found' }));
+  res.type('application/json');
+  res.status(404);
+  res.send({ error: 'Not found' });
 });
+
+app.use(express.static('public'));
 
 const server = app.listen(PORT, () => {
   console.log(`Starting Express server on http://localhost:${PORT}`);
